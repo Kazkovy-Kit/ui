@@ -1,0 +1,14 @@
+{
+  "alerts": {
+    "success": "Success",
+    "info": "Warning",
+    "error": "Error",
+    "changes": "Careful! You have unsaved changes"
+  },
+  "general": {
+    "clear": "Reset",
+    "save": "Save",
+    "modules": "Modules",
+    "dashboard": "Dashboard"
+  }
+}
