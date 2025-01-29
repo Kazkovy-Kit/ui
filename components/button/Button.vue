@@ -2,7 +2,6 @@
 import type {HTMLAttributes} from 'vue'
 import {Primitive, type PrimitiveProps} from 'radix-vue'
 import {type ButtonVariants, buttonVariants} from '.'
-import {LoaderCircle} from "lucide-vue-next";
 
 interface Props extends PrimitiveProps {
   variant?: ButtonVariants['variant']
@@ -23,7 +22,7 @@ const props = withDefaults(defineProps<Props>(), {
       :as-child="asChild"
       :class="cn(buttonVariants({ variant, size }), props.class)"
   >
-    <LoaderCircle v-if="loading" class="animate-spin"/>
+    <Icon name="lucide:loader-circle" v-if="loading" class="animate-spin"/>
     <slot v-else/>
   </Primitive>
 </template>

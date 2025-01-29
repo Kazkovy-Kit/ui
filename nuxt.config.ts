@@ -6,7 +6,13 @@ const currentDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'radix-vue/nuxt'],
+    modules: [
+        '@nuxt/icon',
+        '@nuxtjs/i18n',
+        '@nuxtjs/tailwindcss',
+        '@nuxtjs/color-mode',
+        'radix-vue/nuxt'
+    ],
     components: [
         {
             path: join(currentDir, './components'),

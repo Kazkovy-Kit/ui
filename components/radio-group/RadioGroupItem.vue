@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import { Circle } from 'lucide-vue-next'
 import {
   RadioGroupIndicator,
   RadioGroupItem,
@@ -33,7 +32,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     <RadioGroupIndicator
       class="flex items-center justify-center"
     >
-      <Circle class="h-2.5 w-2.5 fill-current text-current" />
+      <Icon name="lucide:circle" class="h-2.5 w-2.5 fill-current text-current" />
     </RadioGroupIndicator>
   </RadioGroupItem>
 </template>

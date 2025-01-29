@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import {BotIcon, ChevronsUpDownIcon} from "lucide-vue-next";
 import {range} from "@antfu/utils";
 
 const {t} = useI18n()
@@ -53,7 +52,7 @@ onMounted(() => {
                   <span class="truncate font-semibold">Kazkovy Kit</span>
                 </div>
 
-                <ChevronsUpDownIcon class="ml-auto"/>
+                <Icon name="lucide:chevrons-up-down" class="ml-auto"/>
               </slot>
 
             </SidebarMenuButton>
