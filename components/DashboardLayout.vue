@@ -33,11 +33,11 @@ onMounted(() => {
         </SidebarMenuButton>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg"
-                               class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground group-data-[collapsible=icon]:mt-2"
-            >
-              <slot name="guilds">
-
+            <slot name="guilds">
+              <SidebarMenuButton
+                  size="lg"
+                  class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground group-data-[collapsible=icon]:mt-2"
+              >
                 <div
                     class="flex aspect-square size-6 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground group-data-[collapsible=icon]:ml-1">
                   <Avatar class="h-6 w-6 rounded-lg">
@@ -51,11 +51,9 @@ onMounted(() => {
                 <div class="grid flex-1 text-left text-sm leading-tight">
                   <span class="truncate font-semibold">Kazkovy Kit</span>
                 </div>
-
                 <Icon name="lucide:chevrons-up-down" class="ml-auto"/>
-              </slot>
-
-            </SidebarMenuButton>
+              </SidebarMenuButton>
+            </slot>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
