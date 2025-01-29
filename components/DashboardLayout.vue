@@ -22,7 +22,7 @@ onMounted(() => {
             </div>
             <div class="grid flex-1 text-left text-sm leading-tight">
               <span class="truncate font-semibold">
-                KazkovyKit
+                <slot name="name">KazkovyKit</slot>
                 <small><slot name="version">v0.0.0</slot></small>
               </span>
               <span class="truncate text-xs">
