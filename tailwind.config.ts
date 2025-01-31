@@ -2,9 +2,10 @@ import type {Config} from 'tailwindcss'
 import animate from 'tailwindcss-animate'
 import typography from '@tailwindcss/typography'
 
-const config: Partial<Config> = {
-    darkMode: ["class"],
+export default <Partial<Config>>{
+    darkMode: 'class',
     prefix: "",
+    safelist: ['dark'],
 
     theme: {
         container: {
@@ -99,4 +100,3 @@ const config: Partial<Config> = {
     },
     plugins: [animate, typography],
 }
-export default config
