@@ -115,8 +115,10 @@ onMounted(() => {
           </Breadcrumb>
         </div>
         <div class="absolute right-0 mr-4 mt-2 flex gap-2">
-          <LanguageSelect/>
-          <ThemeSelect/>
+          <slot name="top-buttons">
+            <LanguageSelect/>
+            <ThemeSelect/>
+          </slot>
         </div>
       </header>
       <div class="container">

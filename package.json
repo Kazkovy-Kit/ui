@@ -1,7 +1,7 @@
 {
   "name": "@kazkovy-kit/ui",
   "type": "module",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "license": "UNLICENSED",
   "main": "./nuxt.config.ts",
   "scripts": {
